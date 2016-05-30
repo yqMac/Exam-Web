@@ -1,0 +1,16 @@
+#TkManage_Admin {
+	width:100%;
+}
+#TkManage_Admin #treeview {
+	float:left;
+	border:#999 solid 1px;
+	width:150px;
+	height:370px;
+}
+#TkManage_Admin #frm {
+	float:left;
+	width:635px;
+}
+.help {
+	margin-top:15px;
+}

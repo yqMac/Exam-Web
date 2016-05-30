@@ -1,0 +1,23 @@
+#TestPaper_Excel .tabline {
+	width:462px;
+}
+#TestPaper_Excel .tabCont {
+	padding:0 15px;
+	border:#CACACA solid 1px;
+	border-top-style:none;
+	width:640px;
+}
+#TestPaper_Excel fieldset {
+	border:#CACACA solid 1px;
+	padding:0 10px;
+}
+#TestPaper_Excel .btnsubmit {
+	padding-left:200px;
+	margin-top:20px;
+	height:50px;
+	width:400px;
+}
+#TestPaper_Excel .btnsubmit .four_button_y {
+	float:left;
+	margin-left:10px;
+}

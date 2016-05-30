@@ -1,0 +1,51 @@
+#Editquestion #tab{
+}
+#Editquestion .tabline {
+	width:432px;
+}
+#Editquestion .tabCont{
+	text-align:left;
+	padding-left:20px;
+	border:#cacaca solid 1px;
+	border-top-style:none;
+	width:620px;
+	
+}
+#Editquestion .fieldsetClass {
+	width:590px;
+	border:#cacaca solid 1px;
+	padding:0 10px;
+}
+#Editquestion .normal {
+	padding:3px 10px;
+}
+#Editquestion .danxuan {
+	margin-top:5px;
+}
+#Editquestion .duoxuan {
+	padding:10px;
+}
+#Editquestion .tixingtitle {
+	margin-top:8px;
+	color:#30598C;
+}
+#Editquestion .btnsubmit {
+	width:430px;
+	padding-left:170px;
+	margin-top:10px;
+	position:relative;
+	height:30px;
+}
+#Editquestion .four_button_y {
+	float:left;
+	margin-left:10px;
+}
+#Editquestion #checkboxupload {
+	display:block;
+	position:absolute;
+	left:0;
+	top:5px;
+}
+#Editquestion .help {
+	width:600px;
+}

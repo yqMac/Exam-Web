@@ -1,0 +1,23 @@
+body {
+	margin:0 auto;
+	text-align:center;
+	font-size:12px;
+}
+.popTitle{/*��������ı���*/
+	color:#fff;
+	margin-bottom:5px;
+	font-weight:bold;
+	background:url(../../images/xiao_title_back.gif) repeat-x;
+	height:24px;
+	line-height:22px;
+	text-indent:1em;
+	width:100%;
+	text-align:left;
+}
+.content {
+	text-align:left;
+	margin-left:5px;
+}
+#tab {
+	width:100%;
+}

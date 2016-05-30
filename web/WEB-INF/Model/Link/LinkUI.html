@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>友情链接</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link href="../scripts/ui/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+<link href="../images/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src=".../scripts/jquery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery/messages_cn.js"></script>
+<script type="text/javascript" src="../scripts/ui/js/ligerBuild.min.js"></script>
+<script type="text/javascript" src="../js/function.js"></script>
+<script type="text/javascript"> 
+    //表单验证
+    $(function () {
+        $("#form1").validate({
+            errorPlacement: function (lable, element) {
+                element.ligerTip({ content: lable.html(), appendIdTo: lable });
+            },
+            success: function(lable){
+                lable.ligerHideTip();
+            }
+        });
+    }); 
+</script>
+</head>
+<body class="mainbody">
+<form name="form1" method="post" action="###" id="form1">
+  <div class="navigation"><a href="javascript:history.go(-1);" class="back">后退</a>首页 &gt; 控制面板 &gt; 友情链接</div>
+  <div id="contentTab">
+    <ul class="tab_nav">
+      <li class="selected"><a onclick="tabs('#contentTab',0);" href="javascript:;">编辑友情链接</a></li>
+    </ul>
+    <div class="tab_con" style="display:block;">
+      <table class="form_table">
+        <col width="180px">
+        <col>
+        <tbody>
+          <tr>
+            <th>类 型：</th>
+            <td><select name="selType" class="select2 required">
+            		<option value="">请选择</option>
+                    <option value="1">Logo链接</option>
+                    <option value="2">文字链接</option>
+              </select>
+              <label>*</label></td>
+          </tr>
+          <tr>
+            <th>位 置：</th>
+            <td><select name="selPosition" class="select2 required">
+            		<option value="">请选择</option>
+                    <option value="1">位置一</option>
+                    <option value="2">位置二</option>
+              </select>
+              <label>*</label></td>
+          </tr>
+          <tr>
+            <th>网站类名：</th>
+            <td><input name="txtName" type="text" id="txtName" class="txtInput normal required" />
+              <label>*</label></td>
+          </tr>
+          <tr>
+            <th>网站说明：</th>
+            <td><input name="txtContent" type="text" id="txtContent" class="txtInput normal" />
+              <label></label></td>
+          </tr>
+          <tr>
+            <th>链接地址：</th>
+            <td><input name="txtLinkUrl" type="text" id="txtLinkUrl" class="txtInput normal required" />
+              <label>*</label></td>
+          </tr>
+          <tr>
+            <th>网站logo：</th>
+            <td><input name="txtLogo" type="text" id="txtLogo" class="txtInput normal" /></td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><input type="submit" name="btnSubmit" value="提交保存" id="btnSubmit" class="btnSubmit" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</form>
+</body>
+</html>

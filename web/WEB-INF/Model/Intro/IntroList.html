@@ -1,0 +1,113 @@
+ 
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>插件管理</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link type="text/css" rel="stylesheet" href="../scripts/ui/skins/Aqua/css/ligerui-all.css" />
+<link type="text/css" rel="stylesheet" href="../images/style.css" />
+<script type="text/javascript" src="../scripts/jquery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../scripts/ui/js/ligerBuild.min.js"></script>
+<script type="text/javascript" src="../js/function.js"></script>
+</head>
+<body class="mainbody">
+<form name="form1" method="post" action="plugin_list.aspx" id="form1"> 
+<script type="text/javascript"> 
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>  
+
+    <div class="navigation">首页 &gt; 控制面板 &gt; 插件管理</div>
+    <div class="tools_box">
+	    <div class="tools_bar">
+		    <a href="javascript:void(0);" onclick="checkAll(this);" class="tools_btn"><span><b class="all">全选</b></span></a>
+            <a href="IntroUI.html" class="tools_btn"><span><b class="import">添加内容</b></span></a>
+                <a href="####" class="tools_btn"><span><b class="refresh">待定内容</b></span></a>
+            <a href="####" class="tools_btn"><span><b class="delete">批量删除</b></span></a>
+        </div>
+    </div>
+ 
+    
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="msgtable">
+      <tr>
+        <th width="6%">选择</th>
+        <th width="20%" align="left">内容标题</th>
+        <th width="15%">创建时间</th>
+        <th width="10%">点击率</th>
+        <th width="10%">待定</th>
+        <th  align="left">类别</th>
+        <th width="12%">操作</th>
+      </tr>
+    
+      <tr>
+        <td align="center"><span class="checkall"><input id="rptList_ctl01_chkId" type="checkbox" name="rptList$ctl01$chkId" /></span><input type="hidden" name="rptList$ctl01$hidDirName" id="rptList_ctl01_hidDirName" value="advert" /></td>
+        <td>广告管理</td>
+         <td align="center">2000-01-01</td>
+        <td align="center">30</td>
+        <td align="center">待定</td>
+        <td>测试</td>
+        <td align="center"><img src="../images/icon_correct.png" title="已安装" /></td>
+      </tr>
+      <!--重复 可删-->
+      <tr>
+        <td align="center"><span class="checkall"><input id="rptList_ctl02_chkId" type="checkbox" name="rptList$ctl02$chkId" /></span><input type="hidden" name="rptList$ctl02$hidDirName" id="rptList_ctl02_hidDirName" value="feedback" /></td>
+        <td>在线留言</td>
+         <td align="center">feedback</td>
+        <td align="center">一些事情</td>
+        <td align="center">V1.0</td>
+        <td>只适合V1.0.3以上版本</td>
+        <td align="center"><img src="../images/icon_correct.png" title="已安装" /></td>
+      </tr>
+    
+      <tr>
+        <td align="center"><span class="checkall"><input id="rptList_ctl03_chkId" type="checkbox" name="rptList$ctl03$chkId" /></span><input type="hidden" name="rptList$ctl03$hidDirName" id="rptList_ctl03_hidDirName" value="lineservice" /></td>
+        <td>在线客服</td>
+         <td align="center">lineservice</td>
+        <td align="center">一些事情</td>
+        <td align="center">V1.0</td>
+        <td>只适合V1.0.3以上版本</td>
+        <td align="center"><img src="../images/icon_correct.png" title="已安装" /></td>
+      </tr>
+    
+      <tr>
+        <td align="center"><span class="checkall"><input id="rptList_ctl04_chkId" type="checkbox" name="rptList$ctl04$chkId" /></span><input type="hidden" name="rptList$ctl04$hidDirName" id="rptList_ctl04_hidDirName" value="link" /></td>
+        <td>友情链接</td>
+         <td align="center">link</td>
+        <td align="center">一些事情</td>
+        <td align="center">V1.0</td>
+        <td>只适合V1.0.3以上版本</td>
+        <td align="center"><img src="../images/icon_correct.png" title="已安装" /></td>
+      </tr>
+    
+      <tr>
+        <td align="center"><span class="checkall"><input id="rptList_ctl05_chkId" type="checkbox" name="rptList$ctl05$chkId" /></span><input type="hidden" name="rptList$ctl05$hidDirName" id="rptList_ctl05_hidDirName" value="MeetingInfo" /></td>
+        <td>技术会讯</td>
+         <td align="center">MeetingInfo</td>
+        <td align="center">硕仔</td>
+        <td align="center">V1.0</td>
+        <td>2013年9月新增</td>
+        <td align="center"><img src="../images/icon_correct.png" title="已安装" /></td>
+      </tr>
+      
+      <!--重复 可删End-->
+    
+    </table>
+    
+    <div class="line10"></div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+    <script src="OfficeUtility/OfficeUtility.js" defer="defer" type="text/javascript" ></script>
+    <script src="../webservice/server_ExamList.ashx" defer ="defer" type="text/javascript" ></script>
+</head>
+<body style="text-align:left">
+    <form action ="server/server_getExcelData.aspx" method ="post" id="form1">
+        <input type="hidden" id="hidden_postValue" />
+        <input type="file" id="file"  />
+        <input type="button" value="预览文件" onclick="OfficeUtility('file','hidden_postValue','ExcelExport','resultDiv');"  />
+        <input type="button" value="导出到文件" onclick="OfficeUtility('file',null,'ExcelImport',null);"  />
+        <div id="resultDiv"></div>
+    </form>
+</body>
+</html>

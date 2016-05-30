@@ -1,0 +1,35 @@
+#window_TestPaper_add {
+
+}
+#window_TestPaper_add .tabline{
+	width:377px;
+}
+#window_TestPaper_add .tabCont{
+	width:670px;
+	border:#cacaca solid 1px;
+	border-top-style:none;
+	padding:0 10px;
+	text-align:center;
+}
+#window_TestPaper_add .tabCont .block{
+	text-align:left;
+}
+#window_TestPaper_add fieldset {
+	border:#cacaca solid 1px;
+	padding:0 10px;
+	margin:0;
+}
+.colortitle {
+	color:#30598C;
+}
+.btnsubmit {
+	text-align:center;
+	height:40px;
+	margin-top:15px;
+	padding-left:150px;
+	width:460px;
+}
+.btnsubmit .four_button_y {
+	float:left;
+	margin-left:10px;
+}

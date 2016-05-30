@@ -1,0 +1,25 @@
+#window_tmtx_add {
+}
+#window_tmtx_add .name {
+	width:60px;
+	float:left;
+	padding-left:15px;
+	text-align:left;
+	line-height:20px;
+}
+#window_tmtx_add .input_text {
+	width:210px;
+	float:left;
+}
+#window_tmtx_add .desc {
+	float:left;
+	line-height:20px;
+}
+#window_tmtx_add .input_textarea {
+	width:198px;
+	height:62px;
+}
+#window_tmtx_add .btn {
+	margin-top:30px;
+	text-align:center;
+}

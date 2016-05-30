@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+* {padding:0; margin:0; font-family:"微软雅黑", "宋体", Arial;}
+body {background:url(../images/login-bg.jpg) repeat-x #0f517f;}
+#login {height:672px; background:url(../images/login-right.jpg) no-repeat right; margin-top:70px; position:relative;}
+.login {width:462px; height:240px; background:url(../images/login.jpg) no-repeat; position:absolute; top:230px; left:200px;}
+#login-form {margin-top:80px; padding-left:40px;font-size:14px; color:#FFF;}
+.login-left {width:275px; float:left;}
+.login-right {float:left; width:120px;}
+.login td {height:30px; line-height:30px;}
+.login input {border:1px solid #75c5f1; background:#2887bb; width:170px; font-size:14px; line-height:20px; color:#fff;}
+.login input#verifycode {width:80px;}
+.login input#login-btn {background:url(../images/login-btn.jpg) no-repeat; width:87px; height:70px; border:0; margin-top:10px; margin-left:10px;}
+.login input.hover{background:url(../images/login-btn2.jpg) no-repeat;}

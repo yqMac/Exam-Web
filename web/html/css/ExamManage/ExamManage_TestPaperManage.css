@@ -1,0 +1,18 @@
+#ExamManage_TestPaper {
+	font-size:12px;
+	text-align:left;
+}
+#ExamManage_TestPaper .examFieldset {
+	padding:0 10px;
+	width:750px;
+	margin:0;
+	border:1px solid #C6BEC6;
+}
+#ExamManage_TestPaper .fieldset_btn {
+	margin-left:1px!important;
+	margin-left:3px;
+	margin-bottom:5px;
+}
+#ExamManage_TestPaper .tab_table {
+	width:772px;
+}

@@ -1,0 +1,60 @@
+﻿*{font-size:12px; font-family:Tahoma,Verdana,微软雅黑,新宋体}
+body{background:#D2E0F2; }
+a{ color:Black; text-decoration:none;}
+a:hover{ color:Red; text-decoration:none;}
+
+.textbox03 {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,宋体;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;  font-weight: bold; width: 190px; }
+.txt01{font:Verdana, Geneva, sans-serif,宋体;padding:3px 2px 2px 2px; border-width:1px; border-color:#ddd;  color:#000;}
+.txt {border: #878787 1px solid;padding: 4px 3px;font:Verdana, Geneva, sans-serif,宋体;line-height: 14px; background-color: #fff;  height: auto; font-size: 14px;}
+
+.easyui-accordion ul{list-style-type:none;margin:0px; padding:10px;}
+.easyui-accordion ul li{ padding:0px;}
+.easyui-accordion ul li a{line-height:24px;}
+.easyui-accordion ul li div{margin:2px 0px;padding-left:10px;padding-top:2px;}
+.easyui-accordion ul li div.hover{border:1px dashed #99BBE8; background:#E0ECFF;cursor:pointer;}
+.easyui-accordion ul li div.hover a{color:#416AA3;}
+.easyui-accordion ul li div.selected{border:1px solid #99BBE8; background:#E0ECFF;cursor:default;}
+.easyui-accordion ul li div.selected a{color:#416AA3; font-weight:bold;}
+
+
+
+
+
+
+/*没有加载js的提示*/
+#noscript {position:absolute; z-index:100000; height:2046px;top:0px;left:0px; width:100%; background:white; text-align:center;}
+/*没有加载js的提示*/
+
+/*最顶部 管理界面标题 + 登录 退出*/
+#top {overflow:hidden; height:30px; background:url(../images/layout-browser-hd-bg.gif) #7f99be repeat-x top; line-height:25px; color:#fff;}
+.top_welcome{float:right; padding-right:20px; font-size:9pt;}
+.top_welcome a{color:White; font-size:9pt;}
+.top_title{padding-left:10px; font-size:10pt; }
+
+#w{width: 300px; height: 150px; padding: 5px; background: #fafafa;}
+.w_1{padding: 10px; background: #fff; border: 1px solid #ccc;}
+.w_2{text-align: right; height: 30px; line-height: 30px;}
+/*最顶部 管理界面标题 + 登录 退出*/
+
+/*底部样式*/
+#footer {height: 30px; background: #D2E0F2;}
+.footer{text-align:center;color:#15428B; margin:0px; padding:0px;line-height:23px; font-weight:bold;}
+/*底部样式*/
+
+/*导航样式*/
+#west {width:180px;}
+/*导航图标*/
+.icon-sys1{ background:url(../images/directory.png) no-repeat;}
+.icon-sys2{ background:url(../images/directory2.png) no-repeat;}
+.icon-sys3{ background:url(../images/directory3.png) no-repeat;}
+.icon-sys4{ background:url(../images/directory4.png) no-repeat;}
+.icon-sys5{ background:url(../images/directory5.png) no-repeat;}
+.icon-sys6{ background:url(../images/directory6.png) no-repeat;}
+
+.nav{padding-left:26px;}
+.icon{width:16px; height:16px; position:absolute; margin-top:3px;}
+/*导航样式*/
+
+/*标签页右键菜单*/
+#mm {width:150px;}
+/*标签页右键菜单*/
