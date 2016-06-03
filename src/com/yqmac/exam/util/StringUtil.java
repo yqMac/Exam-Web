@@ -59,6 +59,11 @@ public class StringUtil {
         return options;
     }
 
+    /**
+     * 打印Json字符串到页面
+     * @param response
+     * @param str
+     */
     public static  void printStrRespone(HttpServletResponse response, String str ){
         PrintWriter out =null;
         try {
@@ -74,6 +79,13 @@ public class StringUtil {
         }
     }
 
+    /**
+     * 使用指定字符填充字符串到指定长度
+     * @param str
+     * @param len
+     * @param c
+     * @return
+     */
     public static  String getFixedLenString(String str, int len, char c) {
         if (str == null || str.length() == 0) {
             str = "";
@@ -82,7 +94,7 @@ public class StringUtil {
             return str;
         }
         if (str.length() > len) {
-            return str.substring(0, len);
+             return  str.substring(0, len);
         }
         StringBuilder sb = new StringBuilder(str);
         while (sb.length() < len) {

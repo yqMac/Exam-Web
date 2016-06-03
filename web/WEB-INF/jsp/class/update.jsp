@@ -26,16 +26,6 @@
     <script type="text/javascript" src="<%=path%>/html/js/function.js"></script>
 
     <script type="text/javascript">
-        //加载编辑器
-        $(function () {
-            var editor = KindEditor.create('textarea[name="txtContent"]', {
-                resizeType: 1,
-                uploadJson: '../../tools/upload_ajax.ashx?action=EditorFile&IsWater=1',
-                fileManagerJson: '../../tools/upload_ajax.ashx?action=ManagerFile',
-                allowFileManager: true
-            });
-
-        });
         //表单验证
         $(function () {
             $("#form1").validate({
@@ -63,7 +53,7 @@
 <sf:form name="form1" method="post"  id="form1" modelAttribute="TClass">
 
     <div class="navigation"><a href="javascript:history.go(-1);" class="back">后退</a>首页 &gt; <a
-            href="/class/classs">用户组管理</a> &gt; <a href="#">修改用户组</a></div>
+            href="/class/classes">用户组管理</a> &gt; <a href="#">修改用户组</a></div>
     <s:hidden name="id"/>
     <table class="form_table">
         <col width="150px">

@@ -5,7 +5,6 @@ import com.yqmac.exam.auth.AuthMethod;
 import com.yqmac.exam.auth.EnumAuth;
 import com.yqmac.exam.service.IRightService;
 import com.yqmac.exam.service.IRoleService;
-import com.yqmac.exam.util.StringUtil;
 import com.yqmac.exam.vo.TRight;
 import com.yqmac.exam.vo.TRole;
 import org.springframework.stereotype.Controller;
@@ -107,21 +106,6 @@ public class RoleAction {
         List<TRole> roles = roleService.list();
         model.addAttribute("roles", roles);
         return "/role/list";
-    }
-
-    @AuthMethod(right = EnumAuth.Base)
-    @RequestMapping(value = "/ajaxGetRightCheckboxByBigId",method = RequestMethod.POST)
-    public void ajaxGetRightCheckboxByBigId(HttpServletResponse response, String bigRights){
-        String str = rightService.ajaxGetRightCheckboxByBigId(bigRights);
-        System.out.println("--roleAction中-->"+str);
-        StringUtil.printStrRespone(response,str);
-    }
-
-    @AuthMethod(right = EnumAuth.Base )
-    @RequestMapping(value = "/ajaxGetRightCheckboxByBigId4Update",method = RequestMethod.POST)
-    public void  ajaxGetRightCheckboxByBigId4Update(HttpServletResponse response,int roleId,String bigRights){
-        String str = rightService.ajaxGetRightCheckboxByBigId4Update(roleId,bigRights);
-        StringUtil.printStrRespone(response,str);
     }
 
     //基本

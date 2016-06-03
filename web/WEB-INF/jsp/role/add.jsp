@@ -34,10 +34,10 @@
                     //post提交
                     type: "POST",
                     //地址
-                    url: "/role/ajaxGetRightCheckboxByBigId",
+                    url: "/ajax/getRightCheckboxByBigIds",
                     //地址栏传值
                     //题库集下拉框选中的值  题库集主键Id
-                    data: "bigRights="+cc,
+                    data: "strparam="+cc,
                     //成功
                     success: function(msg){
                         //有返回值
@@ -73,7 +73,7 @@
 <sf:form name="form1" method="post"  id="form1" modelAttribute="TRole">
 
     <div class="navigation"><a href="javascript:history.go(-1);" class="back">后退</a>首页 &gt; <a
-            href="role_list">角色管理</a> &gt; <a href="#">增加角色</a></div>
+            href="roles">角色管理</a> &gt; <a href="#">增加角色</a></div>
     <sf:hidden path="id"/>
     <table class="form_table" id ="roleADD">
         <col width="150px">

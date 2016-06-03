@@ -60,7 +60,7 @@
 <sf:form name="form1" method="post" id="form1" modelAttribute="TClass">
 
     <div class="navigation"><a href="javascript:history.go(-1);" class="back">后退</a>首页 &gt; <a
-            href="/class/classs">用户组管理</a> &gt; <a href="#">增加用户组</a>
+            href="/class/classes">用户组管理</a> &gt; <a href="#">增加用户组</a>
     </div>
     <table class="form_table">
         <col width="150px">

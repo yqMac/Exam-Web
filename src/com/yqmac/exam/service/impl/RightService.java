@@ -9,7 +9,6 @@ import com.yqmac.exam.vo.TRight;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -199,60 +198,5 @@ public class RightService implements IRightService {
     public void setRights4Role(int roleId, List<Integer> rightIds) {
         deleteByRoleId(roleId);
         addRights2Role(roleId,rightIds);
-    }
-
-    @Override
-    public String ajaxGetRightCheckboxByBigId(String bigRights) {
-        String [] strs = bigRights.split(",");
-        StringBuffer sbuf = new StringBuffer();
-       //<input type="checkbox"  name ="sRs" value="1" /><br/>
-        for (String str : strs) {
-            int bID = Integer.valueOf(str);
-            List<TRight> sRs= listSmallByBigId(bID);
-            for (TRight r : sRs){
-                sbuf.append("<input type=\"checkbox\"  name =\"smalRs\" value=\""+r.getId()+"\" />"+getFixedLenString(r.getRightName(),10,' ')+"&nbsp;");
-            }
-            sbuf.append("<br/>");
-        }
-        return sbuf.toString();
-    }
-
-    @Override
-    public String ajaxGetRightCheckboxByBigId4Update(int roleId, String bigRights) {
-        List<TRight> rs = listByRoleId(roleId);
-        List<Integer> rint = new ArrayList<>();
-        for (TRight r : rs) {
-            rint.add(r.getId());
-        }
-
-        String [] strs = bigRights.split(",");
-        StringBuffer sbuf = new StringBuffer();
-        //<input type="checkbox"  name ="sRs" value="1" /><br/>
-        for (String str : strs) {
-            int bID = Integer.valueOf(str);
-            List<TRight> sRs= listSmallByBigId(bID);
-            for (TRight r : sRs){
-                sbuf.append("<input type=\"checkbox\"  name =\"smalRs\" value=\""+r.getId()+"\" "+(rint.contains(r.getId())?"checked":"")+" />"+getFixedLenString(r.getRightName(),10,' ')+"&nbsp;");
-            }
-            sbuf.append("<br/>");
-        }
-        return sbuf.toString();
-    }
-
-    private  String getFixedLenString(String str, int len, char c) {
-        if (str == null || str.length() == 0){
-            str = "";
-        }
-        if (str.length() == len){
-            return str;
-        }
-        if (str.length() > len){
-            return str.substring(0,len);
-        }
-        StringBuilder sb = new StringBuilder(str);
-        while (sb.length() < len){
-            sb.append(c);
-        }
-        return sb.toString();
     }
 }

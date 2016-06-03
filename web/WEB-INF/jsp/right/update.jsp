@@ -46,7 +46,7 @@
 <sf:form name="form1" method="post"  id="form1" modelAttribute="right">
 
     <div class="navigation"><a href="javascript:history.go(-1);" class="back">后退</a>首页 &gt; <a
-            href="rights">权限管理</a> &gt; <a href="#">修改权限</a></div>
+            href="/right/rights">权限管理</a> &gt; <a href="#">修改权限</a></div>
     <sf:hidden path="id"/>
     <%--<sf:hidden path="right.id"/>--%>
     <table class="form_table">

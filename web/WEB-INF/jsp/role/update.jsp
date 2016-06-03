@@ -34,10 +34,10 @@
                 //post提交
                 type: "POST",
                 //地址
-                url: "/role/ajaxGetRightCheckboxByBigId4Update",
+                url: "/ajax/ajaxRightCheckboxByBigIds4Update",
                 //地址栏传值
                 //题库集下拉框选中的值  题库集主键Id
-                data: "roleId=" + $("#roleId").val() + "&bigRights=" + cc,
+                data: "id=" + $("#roleId").val() + "&strparam=" + cc,
                 //成功
                 success: function (msg) {
                     //有返回值
@@ -60,10 +60,10 @@
                 //post提交
                 type: "POST",
                 //地址
-                url: "/role/ajaxGetRightCheckboxByBigId",
+                url: "/ajax/ajaxRightCheckboxByBigIds4Update",
                 //地址栏传值
                 //题库集下拉框选中的值  题库集主键Id
-                data: "bigRights=" + cc,
+                data: "id=" + $("#roleId").val() + "&strparam=" + cc,
                 //成功
                 success: function (msg) {
                     //有返回值
@@ -100,7 +100,7 @@
 <sf:form name="form1" method="post"  id="form1" modelAttribute="role">
 
     <div class="navigation"><a href="javascript:history.go(-1);" class="back">后退</a>首页 &gt; <a
-            href="role_list">角色管理</a> &gt; <a href="#">修改角色</a></div>
+            href="/role/roles">角色管理</a> &gt; <a href="#">修改角色</a></div>
     <sf:hidden path="id" id="roleId"/>
     <table class="form_table">
         <col width="150px">
@@ -124,7 +124,7 @@
                     var bigvs=${selectedValues};
                     $("input[name='selectedValues']").each(function () {
                         var dd =$(this).val();
-                        for(var i =0;i<bigvs.length;i++){
+                        for(var i =0; i<bigvs.length;i++){
                             if(bigvs[i] == dd ){
                                 $(this).attr("checked",true);
                                 break;

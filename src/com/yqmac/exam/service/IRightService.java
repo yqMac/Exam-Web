@@ -39,7 +39,5 @@ public interface IRightService {
     public void addRights2Role(int roleId, List<Integer> rightIds);
     public void setRights4Role(int roleId, List<Integer> rightIds);
     public void deleteRight4Role(int roleId, int rightId);
-
-    public String ajaxGetRightCheckboxByBigId(String bigRights);
-    public String ajaxGetRightCheckboxByBigId4Update(int roleId, String bigRights);
+    
 }
